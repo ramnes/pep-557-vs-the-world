@@ -2,10 +2,6 @@ def benchmark():
     from thingy import Thingy
 
     class InventoryItem(Thingy):
-        def __init__(self, *args, **kwargs):
-            super().__init__(*args, **kwargs)
-            if not self.quantity:
-                self.quantity = 0
 
         @property
         def total_cost(self) -> float:

@@ -3,9 +3,6 @@ def benchmark():
     from types import SimpleNamespace
 
     class InventoryItem(SimpleNamespace):
-        name: str
-        unit_price: float
-        quantity: int = 0
 
         @property
         def total_cost(self) -> float:
