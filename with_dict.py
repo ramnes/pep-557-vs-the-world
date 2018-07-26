@@ -1,5 +1,6 @@
 def benchmark():
     class InventoryItem(dict):
+
         @property
         def total_cost(self) -> float:
             return self["unit_price"] * self['quantity']
